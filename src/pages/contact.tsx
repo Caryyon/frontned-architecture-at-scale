@@ -4,58 +4,66 @@ import ExtLink from '../components/ext-link'
 import sharedStyles from '../styles/shared.module.css'
 import contactStyles from '../styles/contact.module.css'
 
-import GitHub from '../components/svgs/github'
-import Twitter from '../components/svgs/twitter'
-import Envelope from '../components/svgs/envelope'
-import LinkedIn from '../components/svgs/linkedin'
-
-const contacts = [
-  {
-    Comp: Twitter,
-    alt: 'twitter icon',
-    link: 'https://twitter.com/_ijjk',
-  },
-  {
-    Comp: GitHub,
-    alt: 'github icon',
-    link: 'https://github.com/ijjk',
-  },
-  {
-    Comp: LinkedIn,
-    alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/jj-kasper-0b5392166/',
-  },
-  {
-    Comp: Envelope,
-    alt: 'envelope icon',
-    link: 'mailto:jj@jjsweb.site?subject=Notion Blog',
-  },
-]
-
 export default function Contact() {
   return (
     <>
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
-        <div className={contactStyles.avatar}>
-          <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
-        </div>
-
-        <h1 style={{ marginTop: 0 }}>Contact</h1>
+        <h1 style={{ marginTop: 0 }}>Current Panelists</h1>
 
         <div className={contactStyles.name}>
-          JJ Kasper - Next.js Engineer @{' '}
-          <ExtLink href="https://vercel.com">Vercel</ExtLink>
+          Cary Wolff - Senior Software Engineer @{' '}
+          <ExtLink href="https://www.northwesternmutual.com/">
+            Northwestern Mutual
+          </ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/caryyondude">@caryyonDude</ExtLink>
         </div>
-
-        <div className={contactStyles.links}>
-          {contacts.map(({ Comp, link, alt }) => {
-            return (
-              <ExtLink key={link} href={link} aria-label={alt}>
-                <Comp height={32} />
-              </ExtLink>
-            )
-          })}
+        <div className={contactStyles.name}>
+          Jon Wong - Web Architect @{' '}
+          <ExtLink href="https://www.coursera.org/">Coursera</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/jnwng">@jnwng</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Kyle Welch - Engineering Manager @{' '}
+          <ExtLink href="https://www.eventbrite.com/">Eventbrite</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/kylewelch">@kylewelch</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Steph Orpilla - Developer @{' '}
+          <ExtLink href="https://aws.amazon.com/">AWS</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/_stephjs">@_stephjs</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Ryan Burgess - Software Engineering Manager @{' '}
+          <ExtLink href="https://www.netflix.com/">Netflix</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/burgessdryan">
+            @burgessdryan
+          </ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Jonathan Creamer - Senior Engineer @{' '}
+          <ExtLink href="https://www.microsoft.com/">Microsoft</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/jcreamer898">@jcreamer898</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Naz Delam - Production Engineer @{' '}
+          <ExtLink href="https://www.netflix.com/">Netflix</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/NazDelam">@NazDelam</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Ruben - Software Developer @{' '}
+          <ExtLink href="https://www.americanexpress.com/">
+            American Express
+          </ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/Infoxicador">@Infoxicador</ExtLink>
         </div>
       </div>
     </>

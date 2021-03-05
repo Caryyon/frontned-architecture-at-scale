@@ -1,6 +1,6 @@
 {
-  "name": "notion-blog",
-  "version": "0.1.0",
+  "name": "frontend-architecture-at-scale",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
     "start": "next start",

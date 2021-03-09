@@ -10,7 +10,6 @@ export default function Contact() {
       <Header titlePre="Contact" />
       <div className={sharedStyles.layout}>
         <h1 style={{ marginTop: 0 }}>Current Panelists</h1>
-
         <div className={contactStyles.name}>
           Cary Wolff - Senior Software Engineer @{' '}
           <ExtLink href="https://www.northwesternmutual.com/">
@@ -24,6 +23,12 @@ export default function Contact() {
           <ExtLink href="https://www.coursera.org/">Coursera</ExtLink>
           {' | '}
           <ExtLink href="https://twitter.com/jnwng">@jnwng</ExtLink>
+        </div>
+        <div className={contactStyles.name}>
+          Naz Delam - Production Engineer @{' '}
+          <ExtLink href="https://www.netflix.com/">Netflix</ExtLink>
+          {' | '}
+          <ExtLink href="https://twitter.com/NazDelam">@NazDelam</ExtLink>
         </div>
         <div className={contactStyles.name}>
           Kyle Welch - Engineering Manager @{' '}
@@ -50,12 +55,6 @@ export default function Contact() {
           <ExtLink href="https://www.microsoft.com/">Microsoft</ExtLink>
           {' | '}
           <ExtLink href="https://twitter.com/jcreamer898">@jcreamer898</ExtLink>
-        </div>
-        <div className={contactStyles.name}>
-          Naz Delam - Production Engineer @{' '}
-          <ExtLink href="https://www.netflix.com/">Netflix</ExtLink>
-          {' | '}
-          <ExtLink href="https://twitter.com/NazDelam">@NazDelam</ExtLink>
         </div>
         <div className={contactStyles.name}>
           Ruben - Software Developer @{' '}
